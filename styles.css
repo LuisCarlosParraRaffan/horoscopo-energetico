@@ -96,11 +96,25 @@ input:focus {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Cairo', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .submit-btn:hover {
     background: #ff7289;
     transform: translateY(-2px);
+}
+
+.submit-btn .klik-logo {
+    height: 24px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.submit-btn:hover .klik-logo {
+    filter: brightness(0) invert(0.9);
 }
 
 .result-container {

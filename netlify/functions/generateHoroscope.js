@@ -58,15 +58,19 @@ exports.handler = async function(event, context) {
         // Crear el prompt para el horóscopo
         const prompt = `¡Hola ${name}! 🌟
 
-¡Gracias por compartir tu nombre y fecha de nacimiento! Según nuestros cálculos, eres del signo ${zodiacSign} ✨
+El Universo nos ha contado que eres del signo ${zodiacSign} ✨
 
-Basado en tu signo zodiacal, crea un mensaje divertido y energético que:
-1. Haga una broma sobre la compatibilidad de ${zodiacSign} con algún género musical
-2. Mencione un signo zodiacal compatible con ${zodiacSign}
-3. Invite a etiquetar en Instagram a alguien de ese signo compatible para bailar juntos en el Festival Estéreo Picnic
-4. Incluya emojis y sea muy divertido y energético
+Basado en el signo zodiacal, crea un mensaje divertido, ocurrente y siempre único que:
+1. Haga una broma sobre la compatibilidad de ${zodiacSign} con algún género musical que se suela escuchar en el Festival Estereo Picnic.
+2. Alerte sobre un evento inesperado pero que llenara de mucha alegría prontamente, pero debe estar preparado.
+3. Mencione un signo zodiacal compatible con ${zodiacSign} y argumente el por qué debería atrverse a dar el siguiente paso con esa primera persona que se le vino a la cabeza cuando leyó ese signo
+4. Mencione un signo zodiacal que no sea para nada compatible y lo cuestione a seguir relaciones con esas personas de ese signo no compatible
+4. Invite a etiquetar en Instagram a alguien con quien no sabe si es compatible o no.
+5. Incluya emojis y sea muy divertido
+6. Mencione sutilmente que Klik Energy le trae con mucho amor un mensaje del universo lleno de la mejor energía.
+7. Cada uno de los mensajes a dar debe ser separado por un espacio, para facilitar la lectura del mensaje.
 
-El mensaje debe ser corto, creativo y muy divertido.`;
+El mensaje debe ser muy creativo, debe promover de forma sutil la recordación de marca a Klik Energy y debe ser muy divertido, ojala que el mensaje sea tan divertido que a las personas les emocione compartirlo en redes sociales`;
 
         console.log('Prompt a enviar a Gemini:', prompt);
 
