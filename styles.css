@@ -10,86 +10,221 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fed7dc, #5392ae);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 2rem;
+    flex: 1;
 }
 
-header {
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 h1 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 .subtitle {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-}
-
-.form-container {
-    background-color: var(--card-background);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
+    color: #555;
     font-weight: 600;
 }
 
 input {
     width: 100%;
-    padding: 0.8rem;
+    padding: 12px;
     border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 16px;
     transition: border-color 0.3s ease;
+    font-family: 'Cairo', sans-serif;
 }
 
 input:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: #ff5a74;
 }
 
 .submit-btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s ease;
+    padding: 14px;
+    background: #ff8397;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cairo', sans-serif;
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background: #ff7289;
+    transform: translateY(-2px);
 }
 
 .result-container {
-    margin-top: 2rem;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.welcome-message {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome-message h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.welcome-message p {
+    color: #666;
+    font-weight: 500;
+}
+
+.horoscope-message {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.horoscope-message p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.festival-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #ff5a74;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 20px;
+}
+
+.festival-btn:hover {
+    background: #ff4a64;
+    transform: translateY(-2px);
+}
+
+.klik-logo {
+    height: 24px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 4px;
+    filter: brightness(0) invert(1);
+}
+
+.klik-logo:hover {
+    filter: brightness(0) invert(0.9);
+}
+
+.site-footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+    filter: brightness(0) invert(0.9);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .submit-btn, .festival-btn {
+        padding: 12px;
+    }
+
+    .footer-logo {
+        height: 35px;
+    }
 }
 
 .horoscope-card {
@@ -174,38 +309,4 @@ footer {
     .form-container, .horoscope-card {
         padding: 1.5rem;
     }
-}
-
-.welcome-message {
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.welcome-message h3 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.welcome-message p {
-    color: var(--text-color);
-    font-size: 1.1rem;
-}
-
-.horoscope-message {
-    background-color: var(--card-background);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.horoscope-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--text-color);
-    text-align: center;
 } 

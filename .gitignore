@@ -1,21 +1,22 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
 # Environment variables
 .env
 .env.local
 .env.*.local
-
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
 
 # Build output
 dist/
 build/
 .netlify/
 
-# IDE and editor files
-.idea/
+# IDE files
 .vscode/
+.idea/
 *.swp
 *.swo
 

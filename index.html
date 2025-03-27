@@ -4,49 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horóscopo Energético - Klik Energy</title>
+    <link rel="icon" type="image/svg+xml" href="images/KlikSymbol.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>✨ Horóscopo Energético ✨</h1>
-            <p class="subtitle">Descubre tu energía única con Klik Energy</p>
-        </header>
-
-        <main>
-            <form id="horoscopeForm" class="form-container">
+        <div class="card">
+            <header class="site-header">
+                <h1>¿Percibes tu vibra cósmica?</h1>
+                <p class="subtitle">🔮 El universo tiene un mensaje para ti 🔮</p>
+                <a href="https://www.instagram.com/klik_energy?igsh=dXZ5ZTJrNXV5cnQw" target="_blank" class="festival-btn">
+                   Síguenos y gana una boleta para el FEP
+                </a>
+            </header>
+            
+            <form id="horoscopeForm">
                 <div class="form-group">
-                    <label for="name">Nombre:</label>
+                    <label for="name">✨ ¿Cómo te llaman las estrellas?" ✨ </label>
                     <input type="text" id="name" name="name" required>
                 </div>
-
+                
                 <div class="form-group">
-                    <label for="birthdate">Fecha de Nacimiento:</label>
+                    <label for="birthdate"> 🌌  "Cuéntanos... ¿Cuándo empezó tu viaje cósmico?" 🌌
+                    </label>
                     <input type="date" id="birthdate" name="birthdate" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <button type="submit" class="submit-btn">Obtener mi Horóscopo Energético ⚡️</button>
+                <button type="submit" class="submit-btn"> Recibe tu mensaje de los astros dando <img src="images/Logo Klik Energy mini.svg" alt="Klik" class="klik-logo"> </button>
             </form>
 
-            <div id="result" class="result-container hidden">
-                <div class="horoscope-card">
-                    <h2>Tu Horóscopo Energético</h2>
-                    <div id="horoscopeContent"></div>
+            <div id="result" class="result-container" style="display: none;">
+                <div class="welcome-message">
+                    <h2>¡Hola, <span id="userName"></span>!</h2>
+                    <p>Según nuestros cálculos, eres del signo <span id="userZodiac"></span> ✨</p>
+                </div>
+                <div class="horoscope-message">
+                    <p id="horoscopeText"></p>
                 </div>
             </div>
-        </main>
-
-        <footer>
-            <p>Powered by Klik Energy ⚡️</p>
-        </footer>
+        </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Desarrollado por</p>
+            <img src="images/KlikSymbol.svg" alt="Klik Energy Logo" class="footer-logo">
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html> 

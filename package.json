@@ -1,19 +1,23 @@
 {
-  "name": "energy-horoscope",
+  "name": "horoscopo-energetico",
   "version": "1.0.0",
-  "description": "Horóscopo Energético personalizado con integración de Google Gemini",
+  "description": "Generador de horóscopos energéticos usando IA",
   "main": "index.js",
   "scripts": {
-    "start": "netlify dev",
-    "build": "netlify build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "horoscope",
+    "ai",
+    "gemini",
+    "netlify"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
     "@sendgrid/mail": "^7.7.0",
     "dayjs": "^1.11.10",
-    "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "netlify-cli": "^17.0.0"
+    "dotenv": "^16.4.7"
   }
 }
