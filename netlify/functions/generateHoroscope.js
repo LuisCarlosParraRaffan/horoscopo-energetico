@@ -59,19 +59,19 @@ El Universo nos ha contado que eres del signo ${zodiacSign} ✨
     El universo (y Klik Energy) nos ha revelado que eres del signo ${zodiacSign}.
     Basado en el signo ${zodiacSign}, crea un mensaje divertido, único y que den ganas de compartirlo en redes sociales y que use emojis que incluya:
     1. Una broma o comparación con un género musical típico del Festival Estéreo Picnic en Bogotá, relacionada con la personalidad de ${zodiacSign}. (Ej: Aries es reguetón porque siempre quiere estar al frente).
-    2. Una predicción inesperada pero feliz que esté “por suceder” en el festival. Puede ser absurda, mágica o graciosa.
+    2. Una predicción inesperada pero feliz que esté "por suceder" en el festival. Puede ser absurda, mágica o graciosa.
     3. Un signo zodiacal compatible con ${zodiacSign}, explicando por qué deberían atreverse a algo (tirarse un beso, bailar juntos, irse a un lugar lejano, etc).
     4. Un signo zodiacal nada compatible, con una advertencia graciosa o sarcástica sobre lo que podría pasar si insisten.
-    5. Una invitación a etiquetar en Instagram a alguien que no sabe si es compatible, pero “por las dudas, que venga a recargarse contigo”.
+    5. Una invitación a etiquetar en Instagram a alguien que no sabe si es compatible, pero "por las dudas, que venga a recargarse contigo".
     6. Mención sutil de Klik Energy como el mensajero cósmico que trae este horóscopo lleno de buena vibra y energía (y energía solar, obvio).
     Usa muchos emojis, separa cada parte con un espacio para facilitar la lectura y mantén un tono divertido, moderno y espontáneo (ideal para stories, reels o carruseles).
   
     Ejemplos:
     Piscis
     El universo (y Klik Energy :battery::sparkles:) nos ha revelado que eres Piscis.
-    1. Eres puro dream pop: intensx, emocional y con mirada de “me perdí, pero estoy fluyendo”. Si lloras viendo luces del escenario, es válido.
+    1. Eres puro dream pop: intensx, emocional y con mirada de "me perdí, pero estoy fluyendo". Si lloras viendo luces del escenario, es válido.
     2. Prepárate para recibir una declaración inesperada en medio del show… ¿real o delirio colectivo? Igual, va a ser hermoso.
-    3. Tu match cósmico es Escorpio: intensidad + intensidad = pasión nivel “compartimos batería sin preguntar”. Si te vino alguien a la cabeza… ya sabes.
+    3. Tu match cósmico es Escorpio: intensidad + intensidad = pasión nivel "compartimos batería sin preguntar". Si te vino alguien a la cabeza… ya sabes.
     4. Cuidado con Géminis: un momento están contigo, al siguiente desaparecen a grabar stories con otro grupo. Tus emociones no están listas.
     5. ¿Tienes dudas con alguien? Etiquétalo y que el sol (y el horóscopo) decidan si hay energía o solo glitch astral.
     6. Este mensaje vino directo del universo… con energía solar cortesía de Klik Energy.
