@@ -3,60 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horóscopo Energético - Klik Energy</title>
-    <link rel="icon" type="image/svg+xml" href="images/KlikSymbol.svg">
+    <title>Horóscopo Klik</title>
+    <link rel="icon" type="image/svg+xml" href="images/KlikSymbol2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <!-- Formulario inicial -->
+        <div id="initial-form" class="form-container">
             <header class="site-header">
-                <h1>¿Percibes tu vibra cósmica?</h1>
-                <p class="subtitle">🔮 El universo tiene un mensaje para ti 🔮</p>
-                <a href="https://www.instagram.com/klik_energy?igsh=dXZ5ZTJrNXV5cnQw" target="_blank" class="festival-btn">
-                   Síguenos y gana una boleta para el FEP
-                </a>
+                <img src="images/KlikSymbol2.svg" alt="Klik Symbol" class="header-logo">
+                <h1 class="header-text">Cero drama, full batería.</h1>
+                <p class="header-subtext">No importa tu signo, todos necesitamos batería.</p>
+                <p class="header-subtext">Cárgate con energía solar.</p>
             </header>
             
-            <form id="horoscopeForm">
-                <div class="form-group">
-                    <label for="name">✨ ¿Cómo te llaman las estrellas?" ✨ </label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="birthdate"> 🌌  "Cuéntanos... ¿Cuándo empezó tu viaje cósmico?" 🌌
-                    </label>
-                    <input type="date" id="birthdate" name="birthdate" required>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="submit-btn">
-                        Consúltale al Universo dando <img src="images/LogoKlikEnergyMini.svg" alt="Klik" class="klik-logo">
-                    </button>
-                </div>
+            <form id="horoscope-form">
+                <input type="text" id="name" name="name" placeholder="Danos tu nombre para que Klik te recargue" required>
+                <input type="date" id="birthdate" name="birthdate" placeholder="¿Fecha de nacimiento? No es para stalkearte, lo juramos" required>
+                <button type="submit" class="submit-btn">¡Conéctate!</button>
             </form>
-
-            <div id="result" class="result-container" style="display: none;">
-                <div class="welcome-message">
-                    <h2>Tenemos un mensaje lleno de la mejor energía para ti, <span id="userName"></span>!</h2>
-                    <p> Los astros nos contaron que eres <span id="userZodiac"></span> ✨</p>
-                </div>
-                <div class="horoscope-message">
-                    <p id="horoscopeText"></p>
-                </div>
+        </div>
+        
+        <!-- Resultado del horóscopo -->
+        <div id="horoscope-result" class="result-container" style="display: none;">
+            <img src="images/KlikSymbol.svg" alt="Klik Symbol" class="result-logo">
+            <h2 id="user-name" class="result-name"></h2>
+            <div class="tagline">
+                El universo habló. <span class="klik-text">Klik</span> lo cargó.
             </div>
+            <div class="horoscope-message">
+                <p id="horoscope-text"></p>
+            </div>
+            <a href="https://www.instagram.com/klik_energy?igsh=dXZ5ZTJrNXV5cnQw" class="instagram-btn" target="_blank">
+                Síguenos en Insta!
+            </a>
         </div>
     </div>
+
     <footer class="site-footer">
         <div class="footer-content">
             <p>Desarrollado por</p>
-            <img src="images/klik-energy-logo.svg" alt="Klik Energy Logo" class="footer-logo">
+            <img src="images/klik-energy-logo-1.svg" alt="Klik Energy Logo" class="footer-logo">
         </div>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html> 
