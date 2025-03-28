@@ -67,37 +67,48 @@ input, input[type="date"] {
 input[type="date"] {
     color: white;
     text-align: center;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+}
+
+input[type="date"]::before {
+    content: "¿Fecha de nacimiento? No es para stalkearte, lo juramos.";
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    font-weight: 300;
+    pointer-events: none;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    padding: 0 10px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
     opacity: 0.8;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 input[type="date"]::-webkit-datetime-edit {
     color: white;
     font-family: 'Cairo', sans-serif;
     font-weight: 300;
+    width: 100%;
+    padding: 0;
+    text-align: center;
 }
 
 input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-    color: white;
-}
-
-input[type="date"]::-webkit-datetime-edit-text {
-    color: white;
-    padding: 0 0.3em;
-}
-
-input[type="date"]::-webkit-datetime-edit-month-field,
-input[type="date"]::-webkit-datetime-edit-day-field,
-input[type="date"]::-webkit-datetime-edit-year-field {
-    color: white;
-}
-
-input[type="date"]::-webkit-inner-spin-button {
-    display: none;
+    padding: 0;
 }
 
 /* Estilos para el placeholder en todos los navegadores */
@@ -437,6 +448,15 @@ input[type="date"]:focus {
         margin-bottom: 15px;
         width: 100%;
     }
+
+    input[type="date"] {
+        min-height: 50px;
+        font-size: 15px;
+    }
+
+    input[type="date"]::before {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -450,5 +470,14 @@ input[type="date"]:focus {
     input:-ms-input-placeholder,
     input::-ms-input-placeholder {
         font-size: 14px;
+    }
+
+    input[type="date"] {
+        min-height: 45px;
+        font-size: 14px;
+    }
+
+    input[type="date"]::before {
+        font-size: 13px;
     }
 } 
