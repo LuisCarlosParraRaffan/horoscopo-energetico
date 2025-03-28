@@ -63,6 +63,43 @@ input, input[type="date"] {
     box-sizing: border-box;
 }
 
+/* Estilos específicos para el input de fecha */
+input[type="date"] {
+    color: white;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+    color: white;
+}
+
+input[type="date"]::-webkit-datetime-edit-text {
+    color: white;
+    padding: 0 0.3em;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color: white;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
 /* Estilos para el placeholder en todos los navegadores */
 input::placeholder {
     color: rgba(255, 255, 255, 0.9);
@@ -356,6 +393,7 @@ input[type="date"]:focus {
     filter: brightness(0.6);
 }
 
+/* Ajustes responsivos manteniendo la legibilidad */
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
