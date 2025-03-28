@@ -5,4 +5,4 @@
 [dev]
   publish = "."
   functions = "netlify/functions"
-  port = 8080 
+  port = 8888 
